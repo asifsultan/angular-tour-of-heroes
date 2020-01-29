@@ -1,0 +1,12 @@
+
+<div class="orientation" *ngIf="hero">
+  <div><span>ID: </span>{{hero.id}}</div>
+  <!-- <div>
+    <label>NAME:
+      <input class="inputUpperCase" [(ngModel)]="hero.name" placeholder="name"  />
+    </label>
+  </div> -->
+  <h4>{{hero.name | uppercase}} </h4>
+    <p>Details: {{hero.detail}}</p>
+  
+</div>
