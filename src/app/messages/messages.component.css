@@ -1,6 +1,6 @@
 /* MessagesComponent's private CSS styles */
 h2 {
-    color: rgb(58, 63, 129);
+    color: rgb(7, 4, 20);
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
   }
@@ -8,7 +8,7 @@ h2 {
     margin: 2em;
   }
   body, input[text], button {
-    color: rgb(145, 62, 78);
+    color: rgb(7, 4, 20);
     font-family: 'Montserrat', sans-serif;
   }
   
@@ -21,8 +21,12 @@ h2 {
     cursor: pointer;
     cursor: hand;
   }
+  
+  #nav-list a:hover{
+    background: #e7e7e7;
+}
   button:hover {
-    background-color: #cfd8dc;
+    background-color: #a9c1cc;
   }
   button:disabled {
     background-color: #eee;

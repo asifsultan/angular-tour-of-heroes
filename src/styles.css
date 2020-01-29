@@ -5,7 +5,9 @@ h1 {
    
     font-family: 'Montserrat', sans-serif;
     font-size: 120%;
+    color: rgb(168, 168, 168);
   }
+
 
   .title-backaground{
     background: linear-gradient(45deg, #a6b2e9 0%, #7ba3ee 100%);
@@ -13,18 +15,45 @@ h1 {
 
   }
   h2, h3 {
-    color: #444;
+    color: rgb(79, 70, 87);
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     text-align: left;
   }
-  body {
+  /* body {
     margin: 2em;
-  }
-  body, input[type="text "], button {
-    color: #333;
+  } */
+  body{
+    font-size: 16px;
+    color: #fff;
+    background-color: #f5eeee;
+    font-family: 'Oxygen', sans-serif;
+    margin: 2em;
+}
+.text-dec-title{
+      font-size: 1.2em;
+      color: #000;
+     
+}
+
+.text-dec{
+
+  color: #000;
+  opacity: .7;
+}
+
+body {
+  color: rgb(41, 40, 43);
+
+}
+ input[type="text "] {
+    color: rgb(231, 229, 241);
     font-family: 'Montserrat', sans-serif;
  
+  }
+
+  button{
+    color: #f5eeee;
   }
   /* everywhere else */
   * {
@@ -38,3 +67,88 @@ h1 {
   .orientation{
     text-align: left;
   }
+
+  #header-nav{
+    background-color: #354046;
+    border-radius: 0;
+    border: 0;
+}
+/* .navbar-brand{
+  padding-top: 25px;
+} */
+
+.navbar-brand h1{ /*Shop title*/
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Lora', serif; */
+  /* color: #080000; */
+  font-size: 1.5em;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  /* text-shadow: 1px 1px 1px #222; */
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+/* #nav-list a:hover{
+  background: #e7e7e7;
+} */
+#nav-list a::selection{
+  color: #e7e7e7;
+}
+#nav-list a:focus{
+  color: #e7e7e7;
+}
+
+#nav-list a:hover{
+  color: #b6b6b6;
+}
+
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top:-30px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+  color: #f5eeee;
+}
+
+/*        Footer    */
+.panel-footer{
+  background-color: #222;
+  color: #f5eeee;
+  border-top: 0;
+  border-bottom: 0;
+  padding-bottom: 30px;
+  padding-top: 35px;
+  margin-top: 30px;
+}
+
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+
+#hours, #address{
+  line-height: 2;
+}
+
+#hours > span, #address > span{
+  font-size: 1.3em;
+}
+
+#address p{
+  color: #b6151d;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials{
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+

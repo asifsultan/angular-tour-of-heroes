@@ -1,21 +1,83 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div >
   <h1>
     <!-- <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> -->
-    <h1 class="title-backaground">{{title}}</h1>
-    <nav>
+    <!-- <h1 class="title-backaground">{{title}}</h1> -->
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+
+            <div class="navbar-brand ">
+                <h1 > TOUR OF HEROES</h1>
+            </div>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+
+              <li id="navMenuButton">
+                <a routerLink="/home" (click)="messageService.clear()">Home</a> 
+                
+              </li>
+               <li>
+               
+                  <a routerLink="/dashboard" (click)="messageService.clear()">Dashboard</a> 
+            
+              </li>
+               <li>
+                <a routerLink="/heroes" (click)="messageService.clear()">Heroes</a>
+               
+              </li>
+             
+            </ul><!--  #nav-list -->
+          </div><!--   .collapse .navbar-collapse -->
+        </div><!-- navbar .container -->
+       </nav>
+    </header>
+    <!-- <nav>
       <a routerLink="/" (click)="messageService.clear()">Home</a> | 
       <a routerLink="/dashboard" (click)="messageService.clear()">Dashboard</a> |
       <a routerLink="/heroes" (click)="messageService.clear()">Heroes</a>
-    </nav>
+    </nav> -->
   </h1>
 <!-- <app-heroes></app-heroes> -->
 
 <router-outlet></router-outlet>
+<!-- <app-home></app-home> -->
 <app-messages></app-messages>
+
   
 
 </div>
+
+<!-- 
+<footer class="panel-footer">
+  <div class="container">
+    <div class="row">
+       <section id="hours" class="col-sm-4">
+        <span>Hours: </span><br>
+        Mon-Fri: 7am - 12am<br>
+        Sat: 7am - 2am<br>
+        Sunday Closed
+        <hr class="visible-xs">
+      </section>
+      <section id="address" class="col-sm-4">
+        <span>Address: </span><br>
+        Shop no. 4 CCA, <br>
+        DHA Lahore Cantt, 54810, Pakistan<br>
+          <p>* Service aera within 70-80 km
+        <hr class="visible-xs">
+      </section>
+      <section id="testimonials" class="col-sm-4">
+        <p>"The heroes are here to save from all the woories!"</p>
+        <p>"Amazing service! Services can't get any better then this!"</p>
+      </section>
+      </div>
+      <div class="text-center">&copy; Heroes of the Nation
+      </div>
+  </div>
+</footer> -->
 <!-- <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
