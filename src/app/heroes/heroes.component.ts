@@ -18,7 +18,7 @@ export class HeroesComponent implements OnInit {
   //   name: 'Windstorm',
   //   detail: ""
   // };
-  constructor(private heroService: HeroService, public messageService: MessageService) { }
+  constructor(private heroService: HeroService) { }
   ngOnInit() {
     this.getHeroes();
   }
